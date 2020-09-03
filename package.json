@@ -3,6 +3,7 @@
     "name": "startbootstrap-grayscale",
     "version": "6.0.2",
     "scripts": {
+        "test": "grunt test",
         "build": "npm run clean && npm run build:pug && npm run build:scss && npm run build:scripts && npm run build:assets",
         "build:assets": "node scripts/build-assets.js",
         "build:pug": "node scripts/build-pug.js",
@@ -36,13 +37,15 @@
         "url": "https://github.com/StartBootstrap/startbootstrap-grayscale.git"
     },
     "dependencies": {
-        "bootstrap": "4.5.0"
+        "bootstrap": "4.5.0",
+        "simple-grunt-starter": "^1.7.0"
     },
     "devDependencies": {
         "autoprefixer": "9.8.0",
         "browser-sync": "2.26.7",
         "chokidar": "3.4.0",
         "concurrently": "5.2.0",
+        "grunt-surge": "^0.7.0",
         "postcss": "7.0.32",
         "prettier": "2.0.5",
         "pug": "3.0.0",
